@@ -24,7 +24,7 @@
                 return WinJS.Promise.wrap(JSON.parse(req.responseText));
             }
         );
-    };
+    },
 
     post = function (url, dataHash) {
         var dataStr = "";
@@ -42,7 +42,7 @@
                 return WinJS.Promise.wrap(JSON.parse(req.responseText));
             }
         );
-    },
+    };
 
     // CHANGE "foo"
     WinJS.Namespace.define("foo", {

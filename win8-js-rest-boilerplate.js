@@ -19,7 +19,7 @@
             });
         }
         
-        return WinJS.xhr({ url: url + queryStr }).then(
+        return WinJS.xhr({ user: username, password: password, url: url + queryStr }).then(
             function (req) {
                 return WinJS.Promise.wrap(JSON.parse(req.responseText));
             }
